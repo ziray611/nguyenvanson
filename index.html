@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff2f6" />
+  <meta name="description" content="Một món quà nhỏ ngập sắc hoa và yêu thương dành tặng những cô gái lớp 10/1 nhân ngày Phụ nữ Việt Nam 20/10/2026." />
+  <title>Gửi những bông hoa 10/1 · 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #df4d83;
+      --pink-deep: #a9275c;
+      --pink-soft: #f9c9d9;
+      --pink-pale: #fff2f6;
+      --cream: #fffaf3;
+      --ink: #52283b;
+      --muted: #916779;
+      --line: rgba(177, 71, 111, .15);
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'DM Sans', 'Segoe UI', sans-serif;
+      --shadow: 0 24px 70px rgba(157, 62, 103, .13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body { margin: 0; color: var(--ink); font-family: var(--sans); background: var(--cream); overflow-x: hidden; }
+    body::before { content: ''; position: fixed; z-index: -2; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 8% 8%, #ffe5ee 0, transparent 31%), radial-gradient(ellipse at 94% 32%, #fde7ed 0, transparent 28%), linear-gradient(180deg, #fff9f6 0%, #fff7f7 52%, #fffaf4 100%); }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(1160px, calc(100% - 44px)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px); background: rgba(255, 249, 249, .82); border-bottom: 1px solid rgba(177,71,111,.10); }
+    .nav { height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 700; letter-spacing: -.03em; }
+    .brand-mark { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 14px 14px 14px 4px; color: white; font-size: 20px; background: linear-gradient(135deg, #f59cb9, #d73476); box-shadow: 0 7px 18px #e987aa55; transform: rotate(-5deg); }
+    .brand span:last-child { font-size: 15px; }
+    .brand small { color: var(--muted); display: block; font-weight: 500; font-size: 10px; letter-spacing: .16em; margin-top: 2px; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: clamp(14px, 2.3vw, 28px); font-size: 13px; color: #795065; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: var(--pink); }
+    .nav-cta, .btn { border: 0; border-radius: 999px; padding: 13px 20px; cursor: pointer; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 9px; transition: transform .25s ease, box-shadow .25s ease, background .25s ease; }
+    .nav-cta, .btn-primary { color: white; background: linear-gradient(120deg, #ed80a5, #cf3473); box-shadow: 0 12px 24px rgba(209, 57, 113, .21); }
+    .btn:hover, .nav-cta:hover { transform: translateY(-3px); box-shadow: 0 16px 28px rgba(209, 57, 113, .25); }
+    .btn-secondary { background: rgba(255,255,255,.75); color: var(--pink-deep); border: 1px solid #edbfd0; }
+    .menu-toggle { display: none; border: 0; background: transparent; color: var(--pink-deep); font-size: 25px; cursor: pointer; }
+
+    .hero { min-height: 670px; display: grid; align-items: center; padding: 72px 0 84px; position: relative; isolation: isolate; }
+    .hero-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(36px, 6vw, 78px); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; border: 1px solid #f2c3d3; border-radius: 999px; background: rgba(255,255,255,.62); padding: 9px 14px; color: var(--pink-deep); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .eyebrow .dot { width: 7px; height: 7px; border-radius: 100%; background: var(--pink); box-shadow: 0 0 0 4px #f7c5d755; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font: 600 clamp(43px, 5vw, 68px)/1.09 var(--serif); letter-spacing: -.045em; margin: 23px 0 22px; }
+    h1 em { color: var(--pink); font-weight: 500; }
+    .hero-copy { color: var(--muted); font-size: 15px; line-height: 1.9; max-width: 480px; margin-bottom: 29px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note { margin-top: 28px; color: #a27689; font-size: 12px; display: flex; align-items: center; gap: 10px; }
+    .avatar-stack { display: flex; }
+    .avatar-stack span { display: grid; place-items: center; margin-left: -6px; width: 28px; height: 28px; border: 2px solid #fff7f7; border-radius: 50%; background: #ffdae6; font-size: 13px; }
+    .avatar-stack span:first-child { margin-left: 0; }
+    .hero-visual { position: relative; padding: 10px 0 22px 10px; }
+    .poster-frame { position: relative; z-index: 1; border-radius: 26px; overflow: hidden; box-shadow: 0 28px 70px rgba(163, 58, 101, .20); border: 7px solid rgba(255,255,255,.8); transform: rotate(1deg); }
+    .poster-frame img { width: 100%; aspect-ratio: 1024/513; object-fit: cover; }
+    .poster-frame::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.55); pointer-events: none; border-radius: 20px; }
+    .visual-orbit { position: absolute; border: 1px solid #e6a2bb7d; border-radius: 50%; width: 118%; height: 115%; left: -10%; top: -6%; transform: rotate(-12deg); }
+    .visual-orbit::before, .visual-orbit::after { content: '✿'; position: absolute; color: #e883a7; font-size: 27px; background: var(--cream); }
+    .visual-orbit::before { top: 17%; left: 2%; transform: rotate(-20deg); }
+    .visual-orbit::after { right: 4%; bottom: 13%; font-size: 34px; }
+    .floating-sticker { z-index: 2; position: absolute; border: 1px solid #fff; border-radius: 18px; background: rgba(255,255,255,.9); box-shadow: 0 14px 35px #9b34561a; backdrop-filter: blur(10px); }
+    .sticker-left { left: -26px; bottom: -2px; padding: 13px 17px; display: flex; align-items: center; gap: 10px; transform: rotate(-4deg); }
+    .sticker-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 13px; background: #ffedf3; font-size: 20px; }
+    .sticker-left strong { display: block; font: 600 16px var(--serif); }
+    .sticker-left small { color: var(--muted); font-size: 10px; }
+    .sticker-right { top: -22px; right: -16px; width: 65px; height: 65px; border-radius: 50%; display: grid; place-items: center; text-align: center; color: #c33b70; font: italic 13px/1.15 var(--serif); transform: rotate(8deg); }
+    .sticker-right strong { font-size: 20px; }
+    .petal { position: fixed; pointer-events: none; z-index: -1; opacity: .64; animation: petalDrift 12s ease-in-out infinite; filter: drop-shadow(0 3px 4px #d55f8a20); }
+    .petal.p1 { left: 3%; top: 22%; font-size: 28px; animation-delay: -3s; }
+    .petal.p2 { right: 4%; top: 43%; font-size: 21px; animation-delay: -7s; }
+    .petal.p3 { left: 45%; top: 9%; font-size: 18px; animation-delay: -5s; }
+    .petal.p4 { right: 12%; bottom: 10%; font-size: 31px; animation-delay: -9s; }
+    @keyframes petalDrift { 0%,100% { transform: translate3d(0,0,0) rotate(0); } 50% { transform: translate3d(12px,-22px,0) rotate(18deg); } }
+
+    .section { padding: 92px 0; position: relative; }
+    .section-head { text-align: center; max-width: 650px; margin: 0 auto 42px; }
+    .section-kicker { color: var(--pink); text-transform: uppercase; font-size: 10px; letter-spacing: .23em; font-weight: 700; display: block; margin-bottom: 13px; }
+    h2 { font: 600 clamp(32px, 4vw, 45px)/1.2 var(--serif); letter-spacing: -.035em; margin-bottom: 14px; }
+    h2 em { color: var(--pink); font-weight: 500; }
+    .section-head p { color: var(--muted); font-size: 14px; line-height: 1.8; margin-bottom: 0; }
+    .wishes-section { background: linear-gradient(180deg, rgba(255,235,242,.65), rgba(255,246,247,.55)); border-block: 1px solid rgba(226,147,174,.15); }
+    .wish-tools { display: flex; justify-content: center; margin: -12px 0 30px; }
+    .wishes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .wish-card { min-height: 222px; position: relative; background: rgba(255,255,255,.77); border: 1px solid rgba(228,167,188,.43); border-radius: 22px; padding: 26px 25px 24px; overflow: hidden; box-shadow: 0 10px 30px rgba(153,65,101,.045); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+    .wish-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: #e9a4bc; }
+    .wish-card::after { content: attr(data-flower); position: absolute; right: 13px; bottom: 2px; font-size: 60px; opacity: .11; transform: rotate(-15deg); pointer-events: none; }
+    .wish-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+    .wish-icon { width: 44px; height: 44px; display: grid; place-items: center; background: #fff0f5; border-radius: 16px; font-size: 22px; }
+    .wish-number { color: #dca0b6; font: italic 16px var(--serif); }
+    .wish-card h3 { font: 600 19px var(--serif); margin-bottom: 10px; }
+    .wish-card p { color: #896779; font-size: 13px; line-height: 1.8; margin-bottom: 0; position: relative; z-index: 1; }
+    .surprise-result { display: none; max-width: 670px; margin: 22px auto 0; padding: 22px 25px; border-radius: 20px; background: white; border: 1px solid #f0c2d2; text-align: center; box-shadow: var(--shadow); animation: pop .35s ease; }
+    .surprise-result.show { display: block; }
+    .surprise-result .big-flower { font-size: 27px; }
+    .surprise-result p { font: italic 20px/1.6 var(--serif); margin: 9px 0 14px; }
+    @keyframes pop { from { transform: translateY(7px) scale(.98); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
+
+    .letter-section { overflow: hidden; }
+    .letter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(35px, 6vw, 76px); align-items: center; }
+    .illustration-wrap { position: relative; max-width: 520px; margin: auto; }
+    .illustration-wrap::before { content: ''; position: absolute; width: 80%; aspect-ratio: 1; border-radius: 50%; background: #f7c6d7; left: 10%; top: 9%; filter: blur(34px); opacity: .5; }
+    .illustration { position: relative; overflow: hidden; border-radius: 48% 48% 24px 24px; border: 9px solid rgba(255,255,255,.88); box-shadow: var(--shadow); transform: rotate(-2deg); }
+    .illustration img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+    .letter-tag { position: absolute; right: -14px; bottom: 25px; z-index: 2; background: #fffaf5; border: 1px solid #f0c5d3; color: var(--pink-deep); padding: 14px 20px; border-radius: 17px; box-shadow: 0 12px 25px #9e46611a; font: italic 16px var(--serif); transform: rotate(4deg); }
+    .letter-copy .section-kicker { margin-bottom: 12px; }
+    .letter-copy h2 { margin-bottom: 20px; }
+    .letter-copy > p { color: var(--muted); line-height: 1.95; font-size: 14px; }
+    .quote { margin: 26px 0; padding: 18px 22px; border-left: 3px solid #e8759d; background: linear-gradient(90deg, #fff0f5, #fff8f7); border-radius: 0 15px 15px 0; color: #8a4864; font: italic 17px/1.75 var(--serif); }
+    .signature { display: flex; align-items: center; gap: 13px; color: var(--muted); font-size: 12px; }
+    .signature .line { width: 38px; height: 1px; background: #df9db5; }
+    .signature strong { color: var(--pink-deep); font-size: 13px; }
+
+    .video-section { background: linear-gradient(150deg, #fce5ed, #fff2f2 58%, #f8e9e5); border-block: 1px solid #f3d3de; overflow: hidden; }
+    .video-section::before, .video-section::after { content: '✿'; position: absolute; color: #de83a3; opacity: .16; font-size: 160px; pointer-events: none; }
+    .video-section::before { left: -35px; top: 20px; transform: rotate(-24deg); }
+    .video-section::after { right: -25px; bottom: 0; transform: rotate(24deg); }
+    .video-wrap { max-width: 850px; margin: 0 auto; position: relative; z-index: 1; }
+    .video-frame { border: 8px solid rgba(255,255,255,.8); border-radius: 26px; overflow: hidden; background: #321e2a; box-shadow: 0 30px 75px rgba(127,48,79,.22); }
+    video { display: block; width: 100%; max-height: 500px; background: #25131e; }
+    .video-caption { display: flex; justify-content: space-between; gap: 20px; align-items: center; margin-top: 18px; color: #8f6175; font-size: 12px; }
+    .video-caption strong { color: var(--pink-deep); font-size: 13px; }
+    .video-badge { white-space: nowrap; display: inline-flex; gap: 7px; align-items: center; background: rgba(255,255,255,.65); border: 1px solid #edcada; border-radius: 99px; padding: 9px 12px; }
+
+    .closing { padding: 90px 0 76px; text-align: center; }
+    .closing-flower { font-size: 32px; margin-bottom: 18px; display: inline-block; animation: sway 4s ease-in-out infinite; }
+    @keyframes sway { 0%,100% { transform: rotate(-7deg); } 50% { transform: rotate(8deg); } }
+    .closing h2 { max-width: 760px; margin: 0 auto 16px; }
+    .closing p { max-width: 600px; color: var(--muted); line-height: 1.9; margin: 0 auto 25px; font-size: 14px; }
+    .signature-chip { display: inline-flex; align-items: center; gap: 9px; border-radius: 99px; border: 1px solid #edc3d2; background: rgba(255,255,255,.68); padding: 11px 17px; font-size: 12px; color: var(--pink-deep); }
+    footer { border-top: 1px solid rgba(177,71,111,.12); padding: 24px 0; color: #a17b8d; font-size: 11px; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .footer-inner strong { color: #bd5d81; }
+    .back-top { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: #fff; border: 1px solid #edc7d5; color: var(--pink-deep); font-size: 17px; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.65,.25,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .wish-card:nth-child(2) { transition-delay: .08s; } .wish-card:nth-child(3) { transition-delay: .16s; }
+    .wish-card:nth-child(4) { transition-delay: .04s; } .wish-card:nth-child(5) { transition-delay: .12s; } .wish-card:nth-child(6) { transition-delay: .20s; }
+    .toast { position: fixed; bottom: 24px; left: 50%; transform: translate(-50%, 20px); z-index: 50; background: #5b2b43; color: white; padding: 13px 18px; border-radius: 99px; box-shadow: 0 10px 30px #5b2b4333; font-size: 13px; opacity: 0; pointer-events: none; transition: all .3s ease; text-align: center; max-width: calc(100% - 30px); }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    .petal-burst { position: fixed; top: 45%; left: 50%; z-index: 60; pointer-events: none; font-size: 24px; animation: burst 1.35s ease-out forwards; }
+    @keyframes burst { 0% { opacity: 0; transform: translate(-50%,-50%) scale(.4) rotate(0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) rotate(var(--rot)) scale(1.2); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+    @media (max-width: 900px) {
+      .hero { min-height: unset; padding: 64px 0 74px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 52px; }
+      .hero-copy, .hero-content { max-width: 690px; }
+      .hero-visual { width: min(100%, 720px); margin: auto; }
+      .wishes-grid { grid-template-columns: repeat(2, 1fr); }
+      .letter-grid { gap: 38px; }
+      .nav-links { gap: 16px; }
+    }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 30px, 520px); }
+      .nav { height: 66px; }
+      .brand-mark { width: 35px; height: 35px; }
+      .menu-toggle { display: block; margin-left: auto; }
+      .nav-cta { display: none; }
+      .nav-links { display: none; position: absolute; top: 66px; left: 0; right: 0; padding: 18px 22px 22px; background: rgba(255,249,249,.97); border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; box-shadow: 0 20px 25px #9a47600d; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 13px 0; border-bottom: 1px solid #f3dce5; }
+      .hero { padding: 48px 0 65px; }
+      h1 { font-size: clamp(41px, 11vw, 58px); }
+      .hero-copy { font-size: 14px; }
+      .hero-actions { display: grid; grid-template-columns: 1fr; }
+      .hero-actions .btn { width: 100%; }
+      .hero-visual { padding: 8px 0 27px; }
+      .poster-frame { border-width: 5px; border-radius: 17px; }
+      .sticker-left { left: -4px; bottom: -9px; padding: 9px 12px; }
+      .sticker-icon { width: 32px; height: 32px; }
+      .sticker-left strong { font-size: 14px; }
+      .sticker-right { width: 53px; height: 53px; top: -16px; right: -3px; }
+      .section { padding: 68px 0; }
+      .section-head { margin-bottom: 30px; }
+      .wishes-grid { grid-template-columns: 1fr; gap: 13px; }
+      .wish-card { min-height: unset; padding: 22px; }
+      .letter-grid { grid-template-columns: 1fr; }
+      .illustration-wrap { width: min(92%, 420px); }
+      .letter-tag { right: -6px; bottom: 17px; font-size: 14px; padding: 11px 15px; }
+      .letter-copy { order: -1; }
+      .video-frame { border-width: 5px; border-radius: 18px; }
+      .video-caption { align-items: flex-start; flex-direction: column; gap: 11px; }
+      .closing { padding: 68px 0 56px; }
+      .footer-inner { align-items: flex-start; }
+      .footer-inner > span { max-width: 85%; line-height: 1.7; }
+      .petal.p3 { left: 78%; }
+    }
+  </style>
+</head>
+<body>
+  <span class="petal p1" aria-hidden="true">🌸</span>
+  <span class="petal p2" aria-hidden="true">✿</span>
+  <span class="petal p3" aria-hidden="true">♡</span>
+  <span class="petal p4" aria-hidden="true">🌷</span>
+
+  <header class="topbar">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="#home" aria-label="Về đầu trang">
+        <span class="brand-mark">✿</span>
+        <span>Gửi những bông hoa<small>10/1 · 20 tháng 10</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#loi-chuc">Lời chúc</a>
+        <a href="#thiep">Lá thư nhỏ</a>
+        <a href="#video">Video yêu thương</a>
+      </div>
+      <a class="nav-cta" href="#video">Gửi yêu thương <span aria-hidden="true">♡</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="dot"></span> 20.10.2026 · Ngày của yêu thương</div>
+          <h1>Gửi những<br><em>bông hoa</em><br>rực rỡ nhất<br>của 10/1.</h1>
+          <p class="hero-copy">Một món quà nhỏ được gói bằng sự chân thành, những lời chúc ngọt ngào và thật nhiều sắc hồng — dành riêng cho những cô gái tuyệt vời của lớp chúng mình.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#loi-chuc">Khám phá lời chúc <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#video"><span aria-hidden="true">▶</span> Xem video gửi bạn</a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true"><span>🌷</span><span>🌸</span><span>💗</span></div>
+            <span>Từ những người bạn nam lớp 10/1, với tất cả sự quý mến.</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-orbit" aria-hidden="true"></div>
+          <div class="poster-frame"><img src="assets/hero-20-10.jpg" alt="Tranh chúc mừng Ngày Phụ nữ Việt Nam 20/10, tông hồng với hình ảnh người phụ nữ Việt Nam và hoa sen" fetchpriority="high"></div>
+          <div class="floating-sticker sticker-left"><span class="sticker-icon">💌</span><span><strong>Một ngày thật xinh</strong><small>Cho những cô gái 10/1</small></span></div>
+          <div class="floating-sticker sticker-right"><span>made with<br><strong>♡</strong><br>love</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wishes-section" id="loi-chuc">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">A little note for you</span>
+          <h2>Những lời chúc <em>từ trái tim</em></h2>
+          <p>Mỗi bạn nữ là một sắc hoa riêng. Chúc các bạn luôn giữ được nét rạng rỡ của mình, hôm nay và cả những ngày bình thường nhất.</p>
+        </div>
+        <div class="wish-tools reveal"><button class="btn btn-primary" id="surpriseBtn"><span aria-hidden="true">✧</span> Bốc một lời chúc bất ngờ</button></div>
+        <div class="wishes-grid">
+          <article class="wish-card reveal" data-flower="🌷"><div class="wish-top"><span class="wish-icon">🌷</span><span class="wish-number">01 / 06</span></div><h3>Luôn xinh theo cách của bạn</h3><p>Chúc bạn luôn tự tin, yêu thương bản thân và tỏa sáng theo cách rất riêng. Vì phiên bản tuyệt nhất của bạn chính là bạn của ngày hôm nay!</p></article>
+          <article class="wish-card reveal" data-flower="🌸"><div class="wish-top"><span class="wish-icon">🌸</span><span class="wish-number">02 / 06</span></div><h3>Niềm vui nở như hoa</h3><p>Mong mỗi ngày đến lớp đều có tiếng cười, có bạn bè bên cạnh và có thật nhiều khoảnh khắc đáng nhớ để sau này cùng mỉm cười khi nghĩ lại.</p></article>
+          <article class="wish-card reveal" data-flower="🌼"><div class="wish-top"><span class="wish-icon">🌼</span><span class="wish-number">03 / 06</span></div><h3>Học tốt, mơ lớn</h3><p>Chúc bạn giữ mãi sự tò mò, lòng can đảm và tinh thần không bỏ cuộc. Mong mọi ước mơ đẹp đều từng bước trở thành hiện thực.</p></article>
+          <article class="wish-card reveal" data-flower="🌹"><div class="wish-top"><span class="wish-icon">🌹</span><span class="wish-number">04 / 06</span></div><h3>Bình an trong tim</h3><p>Chúc bạn luôn khỏe mạnh, ngủ ngon, bớt lo âu và có đủ dịu dàng với chính mình trong những ngày bài vở nhiều hay tâm trạng không vui.</p></article>
+          <article class="wish-card reveal" data-flower="💐"><div class="wish-top"><span class="wish-icon">💐</span><span class="wish-number">05 / 06</span></div><h3>Tỏa sáng và hạnh phúc</h3><p>Chúc những cô gái 10/1 luôn gặp người tốt, chuyện vui và cơ hội tuyệt vời. Hãy cứ chân thành, mạnh mẽ và rạng ngời nhé!</p></article>
+          <article class="wish-card reveal" data-flower="🦋"><div class="wish-top"><span class="wish-icon">🦋</span><span class="wish-number">06 / 06</span></div><h3>Thanh xuân thật đáng nhớ</h3><p>Cảm ơn vì đã làm cho lớp mình có thêm nhiều sắc màu. Chúc chúng ta có một năm học đầy ắp kỷ niệm đẹp, tình bạn bền lâu và thật nhiều tiếng cười.</p></article>
+        </div>
+        <div class="surprise-result" id="surpriseResult" role="status" aria-live="polite"><div class="big-flower">💗 🌸 💗</div><p id="surpriseText"></p><button class="btn btn-secondary" id="copyWishBtn">Sao chép lời chúc</button></div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="thiep">
+      <div class="container letter-grid">
+        <div class="illustration-wrap reveal">
+          <div class="illustration"><img src="assets/illustration-hoa.jpg" alt="Minh họa cô gái Việt Nam mặc áo dài trắng, đội khăn hồng giữa những bông hoa pastel" loading="lazy"></div>
+          <div class="letter-tag">Dành riêng cho bạn ♡</div>
+        </div>
+        <div class="letter-copy reveal">
+          <span class="section-kicker">A letter from 10/1</span>
+          <h2>Gửi các cô gái<br><em>thân thương của lớp mình</em></h2>
+          <p>20/10 không chỉ là một ngày để tặng hoa hay nói lời hay. Đây còn là dịp để chúng mình nói rằng: sự hiện diện của các bạn làm cho tập thể 10/1 trở nên vui vẻ, ấm áp và nhiều màu sắc hơn.</p>
+          <p>Cảm ơn các bạn vì những nụ cười, sự chăm chỉ, những lần cùng nhau cố gắng và cả những điều bé nhỏ làm nên thanh xuân học trò. Mong rằng các bạn sẽ luôn được trân trọng — không chỉ hôm nay mà trong mọi ngày của năm.</p>
+          <blockquote class="quote">“Mong bạn luôn là bông hoa không cần giống bất kỳ ai, vẫn nở rộ theo mùa của riêng mình.”</blockquote>
+          <div class="signature"><span class="line"></span><span>Gửi bằng tất cả sự quý mến, <strong>các bạn nam lớp 10/1</strong></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">One little surprise</span>
+          <h2>Một chút yêu thương <em>qua màn hình</em></h2>
+          <p>Và bây giờ, hãy dành ít phút cho món quà mà các bạn nam đã chuẩn bị. Hy vọng video sẽ mang đến cho các bạn thật nhiều nụ cười!</p>
+        </div>
+        <div class="video-wrap reveal">
+          <div class="video-frame">
+            <video controls preload="metadata" playsinline poster="assets/hero-20-10.jpg" aria-label="Video lời nhắn chúc mừng 20 tháng 10 từ các bạn nam lớp 10/1">
+              <source src="assets/video-loi-chuc-10-1.mp4" type="video/mp4">
+              Trình duyệt của bạn chưa hỗ trợ phát video. Hãy mở website bằng phiên bản Chrome, Edge hoặc Safari mới hơn.
+            </video>
+          </div>
+          <div class="video-caption"><span><strong>🎬 Món quà nhỏ từ 10/1</strong><br>Nhấn nút phát để xem lời nhắn của chúng mình.</span><span class="video-badge">♡ Dành tặng các bạn nữ</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container reveal">
+        <span class="closing-flower" aria-hidden="true">🌷</span>
+        <span class="section-kicker">Happy Vietnamese Women's Day</span>
+        <h2>Chúc những bông hoa 10/1<br><em>luôn nở rộ theo cách của riêng mình.</em></h2>
+        <p>Chúc các bạn một ngày 20/10 thật ngọt ngào, một tuổi trẻ thật rực rỡ và một hành trình phía trước luôn có niềm vui, sự tử tế cùng những người thương quý bên cạnh.</p>
+        <span class="signature-chip">💌 With love · Tập thể lớp 10/1 · 20.10.2026</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner"><span>Made with <strong>♡</strong> and lots of flowers · Một món quà nhỏ từ lớp 10/1</span><a class="back-top" href="#home" aria-label="Lên đầu trang">↑</a></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Đóng menu' : 'Mở menu');
+        menuToggle.textContent = isOpen ? '×' : '☰';
+      });
+      navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Mở menu');
+        menuToggle.textContent = '☰';
+      }));
+
+      const wishes = [
+        'Chúc các cô gái 10/1 luôn rạng rỡ, vui vẻ, học thật tốt và gặp toàn điều dễ thương. Đừng quên rằng các bạn xứng đáng với những điều tốt đẹp nhất! 🌷',
+        'Mong bạn luôn đủ tự tin để theo đuổi ước mơ, đủ bình yên để tận hưởng hiện tại và đủ yêu thương để ôm lấy chính mình trong mọi ngày. 💗',
+        'Chúc thanh xuân của chúng ta có nhiều tiếng cười hơn áp lực, nhiều kỷ niệm hơn tiếc nuối và luôn có những người bạn thật lòng ở bên. 🌸',
+        '20/10 vui vẻ nhé! Chúc bạn không chỉ hôm nay mà 364 ngày còn lại cũng được trân trọng, yêu thương và sống thật rực rỡ theo cách riêng. 💐',
+        'Chúc bạn kiểm tra gặp câu tủ, bài khó hóa dễ, mỗi ngày đến lớp đều vui và mọi nỗ lực thầm lặng đều nhận được kết quả xứng đáng. ✨',
+        'Mong những điều dịu dàng nhất sẽ tìm đến bạn: một lời hỏi thăm đúng lúc, một ngày bình yên, một giấc ngủ ngon và một trái tim luôn đầy hy vọng. 🦋'
+      ];
+      const surpriseBtn = document.getElementById('surpriseBtn');
+      const surpriseResult = document.getElementById('surpriseResult');
+      const surpriseText = document.getElementById('surpriseText');
+      const copyWishBtn = document.getElementById('copyWishBtn');
+      let activeWish = wishes[0];
+      surpriseBtn.addEventListener('click', () => {
+        let next = Math.floor(Math.random() * wishes.length);
+        if (wishes.length > 1 && wishes[next] === activeWish) next = (next + 1) % wishes.length;
+        activeWish = wishes[next];
+        surpriseText.textContent = activeWish;
+        surpriseResult.classList.remove('show');
+        requestAnimationFrame(() => surpriseResult.classList.add('show'));
+        surpriseResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        makeFlowerBurst();
+      });
+      copyWishBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(activeWish);
+          showToast('Đã sao chép lời chúc 💗');
+        } catch (error) {
+          const area = document.createElement('textarea');
+          area.value = activeWish;
+          area.setAttribute('readonly', '');
+          area.style.position = 'fixed'; area.style.opacity = '0';
+          document.body.appendChild(area); area.select();
+          const copied = document.execCommand('copy'); area.remove();
+          showToast(copied ? 'Đã sao chép lời chúc 💗' : 'Bạn hãy chọn và sao chép lời chúc nhé.');
+        }
+      });
+
+      let toastTimer;
+      function showToast(message) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('show'), 2600);
+      }
+      function makeFlowerBurst() {
+        const flowers = ['🌸', '💗', '🌷', '✿', '✨', '🌼'];
+        for (let i = 0; i < 15; i++) {
+          const item = document.createElement('span');
+          item.className = 'petal-burst';
+          item.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+          item.style.setProperty('--dx', `${Math.round(Math.random() * 440 - 220)}px`);
+          item.style.setProperty('--dy', `${Math.round(Math.random() * 340 - 170)}px`);
+          item.style.setProperty('--rot', `${Math.round(Math.random() * 260 - 130)}deg`);
+          item.style.animationDelay = `${Math.random() * .13}s`;
+          document.body.appendChild(item);
+          setTimeout(() => item.remove(), 1700);
+        }
+      }
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+        revealEls.forEach(el => observer.observe(el));
+      } else {
+        revealEls.forEach(el => el.classList.add('visible'));
+      }
+    })();
+  </script>
+</body>
+</html>
